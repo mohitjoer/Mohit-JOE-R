@@ -1,25 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-
 
 body {
     min-height: 100vh;
     background-color: black;
     color: #a2a5b3;
-    align-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-h1{
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1 {
     color: white;
 }
 
-.card1{
-    margin-top:100px  ;
+.top_bar {
+    background-image: conic-gradient(blue, rgb(0, 33, 79) ,blue, rgb(6, 32, 69) ,blue);
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.top_bar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.top_bar nav ul li {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.top_bar nav ul li a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.tb-button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.tb-button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.card1 {
+    margin-top: 100px;
     padding: 2em;
     width: 300px;
     background-color: #1c1f2b;
@@ -28,14 +86,14 @@ h1{
     position: relative;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.card1::after , .card1::before {
-    content:''; 
+.card1::after, .card1::before {
+    content: '';
     position: absolute;
     height: 100%;
     width: 100%;
@@ -49,13 +107,13 @@ h1{
     animation: 3s spin linear infinite;
 }
 
-.card1::before{
+.card1::before {
     filter: blur(1.5rem);
     opacity: 0.5;
 }
 
 @keyframes spin {
-    from{
+    from {
         --angle: 0deg;
     }
     to {
@@ -63,10 +121,27 @@ h1{
     }
 }
 
-.card2{
+.card-l {
+    align-self: flex-start;
+    text-align: center;
+    padding-top: 5px;
     margin-top: 200px;
     height: 200px;
-    width: 60%;
-    background-image: conic-gradient(from 70deg, rgb(0, 14, 34), blue);
+    width: 75%;
+    background-image: conic-gradient(from 74deg, rgb(0, 14, 34), blue);
     clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+}
+
+.card-r {
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 200px;
+    height: 200px;
+    width: 75%;
+    background-image: conic-gradient(from 286deg, blue, rgb(0, 14, 34));
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
+}
+
+.t-text {
+    text-shadow: 3px 5px 10px rgba(255, 255, 255, 0.8);
 }
