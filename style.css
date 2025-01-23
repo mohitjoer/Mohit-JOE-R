@@ -28,6 +28,8 @@ main {
 
 h1 {
     color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .top_bar {
@@ -73,15 +75,18 @@ h1 {
     padding: 10px ;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s, text-shadow 0.2s;
     font-size: 0.9rem;
     white-space: nowrap;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
 }
 
 .tb-button:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+                 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
 .card1 {
@@ -152,4 +157,11 @@ h1 {
 
 .t-text {
     text-shadow: 3px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Add this new class for reusable text glow effect */
+.text-glow {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
+                 0 0 20px rgba(0, 255, 255, 0.5),
+                 0 0 30px rgba(0, 255, 255, 0.3);
 }
