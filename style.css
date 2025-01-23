@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-html{
-    color: #f0f0f0;
-}
 
 body {
     min-height: 100vh;
@@ -18,7 +15,7 @@ h1{
     color: white;
 }
 
-.card{
+.card1{
     margin: 0 auto;
     padding: 2em;
     width: 300px;
@@ -34,7 +31,7 @@ h1{
     inherits: false;
 }
 
-.card::after , .card::before {
+.card1::after , .card1::before {
     content:'';
     position: absolute;
     height: 100%;
@@ -49,7 +46,7 @@ h1{
     animation: 3s spin linear infinite;
 }
 
-.card::before{
+.card1::before{
     filter: blur(1.5rem);
     opacity: 0.5;
 }
