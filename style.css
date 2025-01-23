@@ -9,6 +9,9 @@ body {
     background-color: black;
     color: #a2a5b3;
     align-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
@@ -16,7 +19,7 @@ h1{
 }
 
 .card1{
-    margin: 0 auto;
+    margin-top:100px  ;
     padding: 2em;
     width: 300px;
     background-color: #1c1f2b;
@@ -32,7 +35,7 @@ h1{
 }
 
 .card1::after , .card1::before {
-    content:'';
+    content:''; 
     position: absolute;
     height: 100%;
     width: 100%;
@@ -58,4 +61,12 @@ h1{
     to {
         --angle: 360deg;
     }
+}
+
+.card2{
+    margin-top: 200px;
+    height: 200px;
+    width: 60%;
+    background-image: conic-gradient(from 70deg, rgb(0, 14, 34), blue);
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
 }
