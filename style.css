@@ -92,10 +92,9 @@ h1 {
 
 .welcome-text {
     font-size: 6rem;
-    color: transparent;
+    color: white;
     position: relative;
     margin: 50px 0;
-    background: linear-gradient(to right, #00f, #0ff);
     -webkit-background-clip: text;
     background-clip: text;
     animation: welcome-slide 2s ease-out forwards;
