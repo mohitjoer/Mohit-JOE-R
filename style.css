@@ -3,16 +3,21 @@
 }
 
 body {
+  color: #fdfcfd;
+  font-family: "Roboto Condensed", serif;
+  margin: 0;
+}
+/* top */
+
+header{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  flex-direction: column;
   height: 100vh;
   background:linear-gradient(45deg, #cde4e4, #00ffff);
-  color: #fdfcfd;
-  font-family: "Roboto Condensed", serif;
 }
-  
+
 .card {
   display: flex;
   align-items: center;
@@ -106,8 +111,21 @@ a{
   height: 50px;
   border-radius: 40px;
 }
-  
+/* top */
+/* mid */
+
+.about-me{
+  margin-top: ;
+  background-color: white;
+  padding:50px;
+}
+
+/* mid */
+
+
+/* responsive */
 @media (width <= 600px) {
+  /* top */
   .card {
     margin: 0 40px;
     padding-left: 50px;
@@ -137,10 +155,14 @@ a{
   .socials {
     justify-content: center;
   }
+  /* top */
+  /* mid */
+
+  /* mid */
 }
 
 @media (width <= 440px) {
-  
+  /* top */
   header{
     display: flex;
   }
@@ -156,4 +178,11 @@ a{
   .card{
     align-self: center;
   }
+  /* top */
+  /* mid */
+
+  /* mid */
 }
+
+
+/* responsive */
