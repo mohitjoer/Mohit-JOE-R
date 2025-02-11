@@ -140,6 +140,7 @@ a{
 }
 
 @media (width <= 440px) {
+  
   header{
     display: flex;
   }
