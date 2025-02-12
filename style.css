@@ -70,6 +70,25 @@ a{
   opacity: 0.5;
 }
 
+.card h2, .card h3, .card p {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black; 
+  width: 0;
+  animation: typing 2s steps(20, end) forwards, blink 0.5s step-end 2s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: transparent; } 
+}
+
+
 .socials {
   display: flex;
   align-items: center;
