@@ -7,7 +7,9 @@ body {
   font-family: "Roboto Condensed", serif;
   margin: 0;
 }
-/* top */
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+                                                   /* top */
 
 header{
   display: flex;
@@ -130,18 +132,53 @@ a{
   height: 50px;
   border-radius: 40px;
 }
-/* top */
-/* mid */
+                                                      /* top */
 
-.about-me{
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+                                                       /* mid */
+
+main{
   background-color: white;
-  padding:50px;
 }
 
-/* mid */
+.card-l, .card-r {
+  background: #00ffff;
+  box-shadow: 0 0px 30px rgba(10, 10, 10, 0.999);
+  margin: 60px 0;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-l .png-rou {
+  order: 2;
+  margin-left: auto;
+}
 
 
-/* responsive */
+.card-r .png-rou {
+  order: -1;
+  margin-right: auto;
+}
+
+.png-rou {
+  background-color: white;
+  padding: 15px;
+  border-radius: 150px;
+}
+
+.card-img {
+  height: 250px;
+  width: 250px;
+}
+
+                                                      /* mid */
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+
+                                                   /* responsive */
+
 @media (width <= 600px) {
   /* top */
   .card {
@@ -203,4 +240,4 @@ a{
 }
 
 
-/* responsive */
+                                                         /* responsive */
