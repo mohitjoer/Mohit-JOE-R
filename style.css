@@ -151,6 +151,15 @@ main{
   flex-direction: row;
 }
 
+.card-r{
+  border-radius: 140px 0 0 140px;
+  margin-left: auto;
+}
+
+.card-l{
+  border-radius: 0 140px 140px 0;
+}
+
 .card-l .png-rou {
   order: 2;
   margin-left: auto;
