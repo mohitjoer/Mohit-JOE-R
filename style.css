@@ -152,7 +152,7 @@ main {
 }
 
 .card-r {
-  border-radius: 140px 0 0 140px;
+  border-radius: 150px 0 0 150px;
   margin-left: auto; 
 }
 
@@ -161,9 +161,18 @@ main {
 }
 
 .card-l h3, .card-r h3 {
-  color: black;
-  text-shadow: 0 0px 30px rgba(10, 10, 10, 0.5);
-  margin: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card-l p, .card-r p {
+  color: #0787a6;
+  text-shadow: 0 4px 8px #0786a67d;
+  margin: 20px;
   text-align: center;
 }
 
@@ -176,16 +185,23 @@ main {
 }
 
 .card-l .png-rou {
+  height: 280px;
+  width: 280px;
   order: 2;
   margin-left: auto;
 }
 
 .card-r .png-rou {
+  height: 300px;
+  width: 300px;
   order: -1;
   margin-right: auto;
 }
 
 .png-rou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   padding: 15px;
   border-radius: 150px;
@@ -193,8 +209,8 @@ main {
 }
 
 .card-img {
-  height: 250px;
-  width: 250px;
+  height: 90%;
+  width: 90%;
 }
 
                                                       /* mid */
@@ -203,14 +219,14 @@ main {
 
                                                    /* responsive */
 
+                                                     /* top */
 @media (width <= 600px) {
-  /* top */
   .card {
     margin: 0 40px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     flex-direction: column;
   }
@@ -234,14 +250,11 @@ main {
   .socials {
     justify-content: center;
   }
-  /* top */
-  /* mid */
-
-  /* mid */
+  
 }
 
 @media (width <= 440px) {
-  /* top */
+  
   header{
     display: flex;
   }
@@ -257,11 +270,60 @@ main {
   .card{
     align-self: center;
   }
-  /* top */
-  /* mid */
-
-  /* mid */
 }
+                                                                    /* top */
+                                                                    /* mid */
+@media (width <= 1100px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-l, .card-r {
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+  }
+
+  .card-l .png-rou {
+    height: 250px;
+    width: 250px;
+    order: 0;
+    margin: 0;
+  }
+  
+  .card-r .png-rou {
+    height: 260px;
+    width: 260px;
+    order: 1;
+    margin: 0;
+  }
+}
+
+@media (width <= 600px) {
+  .card-l, .card-r {
+    width: 80%;
+  }
+
+  .card-l .png-rou {
+    height: 150px;
+    width: 150px;
+ }
+  
+  .card-r .png-rou {
+    height: 150px;
+    width: 150px;
+ }
+}
+
+
+  
+
+
+                                                                    /* mid */
 
 
                                                          /* responsive */
