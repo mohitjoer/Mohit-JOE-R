@@ -142,6 +142,39 @@ main {
   background-color: white;
 }
 
+.my-skills{
+  padding: 30px 0;
+  background-color: #272524;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-card{
+  border-radius: 15px;
+  border: solid;
+  border-width: 1px;
+  border-color: #00ffff;
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 40px;
+  box-shadow: 0 0px 30px rgba(0, 251, 255, 0.429);
+  text-shadow: 0 0px 10px rgba(0, 251, 255, 0.429);
+}
+
+.skill-card h4{
+  margin: 0;
+}
+
+.skill-card:hover{
+  background-color: rgba(128, 128, 128, 0.14);
+  font-size: 20px;
+  transform: translatey(-5px);
+}
+
 .card-l, .card-r {
   background: #00D1FF;
   box-shadow: 0 0px 30px rgba(10, 10, 10, 0.999);
