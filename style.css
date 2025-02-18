@@ -162,8 +162,6 @@ main {
   align-items: center;
   width: 150px;
   height: 40px;
-  box-shadow: 0 0px 30px rgba(0, 251, 255, 0.429);
-  text-shadow: 0 0px 10px rgba(0, 251, 255, 0.429);
 }
 
 .skill-card h4{
@@ -174,6 +172,8 @@ main {
   background-color: rgba(128, 128, 128, 0.14);
   font-size: 20px;
   transform: translatey(-5px);
+  box-shadow: 0 0px 30px rgba(0, 251, 255, 0.429);
+  text-shadow: 0 0px 10px rgba(0, 251, 255, 0.429);
 }
 
 .card-l, .card-r {
