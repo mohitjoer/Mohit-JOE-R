@@ -162,6 +162,7 @@ main {
   align-items: center;
   width: 150px;
   height: 40px;
+  transition: 0.3s;
 }
 
 .skill-card h4{
