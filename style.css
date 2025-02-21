@@ -103,6 +103,12 @@ a{
   background: transparent;
   color: #f8f8f8;
   padding: 0;
+  border-radius: 50px;
+}
+
+.socials > button:hover {
+  box-shadow: 0 0px 10px rgba(247, 246, 246, 0.907);
+  
 }
 
 .socials > button:first-child::before {
@@ -132,6 +138,11 @@ a{
   height: 50px;
   border-radius: 40px;
 }
+
+.socials > button > i:hover {
+  font-size: 30px;
+}
+
                                                       /* top */
 
 /* ----------------------------------------------------------------------------------------------------------------*/
@@ -142,13 +153,19 @@ main {
   background-color: white;
 }
 
+.part1{
+  background-color: #272524;
+  z-index: -1;
+}
+
 .my-skills{
   padding: 30px 0;
-  background-color: #272524;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  width: fit-content;
+  margin: 0;
 }
 
 .skill-card{
