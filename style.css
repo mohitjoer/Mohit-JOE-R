@@ -484,3 +484,42 @@ footer{
 
 
                                                          /* responsive */
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background: linear-gradient(45deg, #333, #555);
+}
+
+body.dark-mode .card {
+    background: #222;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card p {
+    border-right: 2px solid #e0e0e0;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+
+#dark-mode-toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #5b5b5b;
+}
