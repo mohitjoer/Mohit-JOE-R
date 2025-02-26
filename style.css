@@ -122,8 +122,8 @@ header{
   background-image: conic-gradient(from 0deg,aqua, rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua);
   width: fit-content; 
   box-shadow: -10px 0 60px rgba(255, 255, 255, 0.9), 
-  10px 0 60px rgba(0, 0, 0, 0.9),         
-  0 10px 60px rgba(0, 255, 255, 0.9);  
+              10px 0 60px rgba(0, 0, 0, 0.9),         
+              0 10px 60px rgba(0, 255, 255, 0.9);  
 }
 
 .home-sci img{
