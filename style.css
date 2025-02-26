@@ -5,9 +5,6 @@
   font-family: "poppins",sans-serif;
 }
 
-body{
-  color: black;
-}
 
 header{
   position: fixed;
@@ -28,11 +25,11 @@ header{
   color: white;
   text-decoration: none;
   font-weight: 600;
-  animation: slidedown .7s;
+  animation: slidedown 1s ease  forwards;
 }
 
 .navbar{
-  animation: slidedown .7s;
+  animation: slidedown 1s ease  forwards;
 }
 
 .navbar a {
@@ -54,6 +51,7 @@ header{
 }
 
 .home{
+  background-color: rgb(192, 190, 190);
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -65,7 +63,7 @@ header{
 
 .home-content{
   max-width: 600px;
-  animation: slideleft 1s;
+  animation: slideleft 1s  ease  forwards;
 }
 
 .home-content h3 {
@@ -95,6 +93,7 @@ header{
   display: flex;
   height: fit-content;
   width: fit-content;
+  animation: slideup 1s ease  forwards;
 }
 
 .icon a{
@@ -118,16 +117,18 @@ header{
 }
 
 .home-sci{
-  animation: slideright 1s;
+  animation: slideright 1s  ease  forwards;
   border-radius: 410px;
   background-image: conic-gradient(from 0deg,aqua, rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua);
-  width: fit-content;
+  width: fit-content; 
+  box-shadow: -10px 0 60px rgba(255, 255, 255, 0.9), 
+  10px 0 60px rgba(0, 0, 0, 0.9),         
+  0 10px 60px rgba(0, 255, 255, 0.9);  
 }
 
 .home-sci img{
   border-radius: inherit;
 }
-
 
 
 
@@ -153,7 +154,7 @@ header{
   }
 }
 
-@keyframes slidedown {
+@keyframes slideup {
   0%{
     transform: translatey(100px);
     opacity: 0;
