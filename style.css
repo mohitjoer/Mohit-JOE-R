@@ -41,6 +41,50 @@ header{
 }
 
 .navbar a:hover{
-  color: aqua;
-  
+  color: aqua; 
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0 ;
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0 ;
+}
+
+.home-content p {
+  font-size: 20px;
+
+}
+
+.icon {
+  height: fit-content;
+  width: fit-content;
+}
+
+.home-sci{
+  border-radius: 410px;
+  background-image: conic-gradient(from 0deg,rgb(8, 34, 69), rgb(20, 111, 181),rgb(8, 34, 69),rgb(20, 111, 181),rgb(8, 34, 69),rgb(20, 111, 181),rgb(8, 34, 69));
+  width: fit-content;
+}
+
+.home-sci img{
+  border-radius: inherit;
 }
