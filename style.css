@@ -64,6 +64,8 @@ header{
 .home-content{
   max-width: 600px;
   animation: slideleft 1s  ease  forwards;
+  opacity: 0;
+  animation-delay: .5s;
 }
 
 .home-content h3 {
@@ -94,6 +96,8 @@ header{
   height: fit-content;
   width: fit-content;
   animation: slideup 1s ease  forwards;
+  opacity: 0;
+  animation-delay: .8s;
 }
 
 .icon a{
@@ -118,7 +122,12 @@ header{
 
 .home-sci{
   animation: slideright 1s  ease  forwards;
-  border-radius: 410px;
+  opacity: 0;
+  animation-delay: .5s;
+  border-width: 10px;
+  border-style:outset;
+  border-color: black;
+  border-radius: 500px;
   background-image: conic-gradient(from 0deg,aqua, rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua,rgb(20, 111, 181),aqua);
   width: fit-content; 
   box-shadow: -10px 0 60px rgba(255, 255, 255, 0.9), 
@@ -127,6 +136,7 @@ header{
 }
 
 .home-sci img{
+  transform: translatey(5px);
   border-radius: inherit;
 }
 
