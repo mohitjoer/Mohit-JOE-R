@@ -140,6 +140,21 @@ header{
   border-radius: inherit;
 }
 
+/*responsive*/
+
+@media (max-width: 750px){
+
+  .home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+}
+
+/*responsive*/
+
 
 /*part-1*/
 
