@@ -243,6 +243,14 @@ header{
 }
 /*responsive*/
 
+@media (max-width: 750px){
+  .card-holder{
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+}
 
 /*responsive*/
 
