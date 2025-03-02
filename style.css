@@ -144,13 +144,45 @@ header{
 
 @media (max-width: 750px){
 
+  .home-content h3{
+    width: 300px;
+    font-size: 18px;
+  }
+  .home-content h1{
+    width: fit-content;
+    font-size: 40px;
+  }
+
   .home{
+    padding: 0%;
+    padding-top: 150px;
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
   }
   
+
+  .home-sci{
+    height: 300px;
+    width: 300px;
+  }
+
+  .home-sci img{
+    height: 280px;
+    width: 280px;
+    transform: translatey(2px);
+    border-radius: inherit;
+  }
+
+  .icon a{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+  }
+
 }
 
 /*responsive*/
@@ -209,7 +241,10 @@ header{
   color: aqua;
   transform: scale(1.1);
 }
+/*responsive*/
 
+
+/*responsive*/
 
 /*part-3*/
 
