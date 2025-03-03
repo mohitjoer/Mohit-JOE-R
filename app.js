@@ -1,7 +1,13 @@
 let theme = document.querySelector('#mode');
 theme.addEventListener('click', () => {
   console.log('clicked');
-  this.document.innerhtml = "Hello";
+  let logo = document.querySelector('#logo');
+  if (logo.getAttribute('name')=='sunny'){
+    logo.setAttribute('name','moon')}
+    else{
+      logo.setAttribute('name','sunny')
+    }
+  
 });
 
 
