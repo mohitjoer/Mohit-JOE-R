@@ -6,8 +6,7 @@ theme.addEventListener('click', () => {
     logo.setAttribute('name','moon')}
     else{
       logo.setAttribute('name','sunny')
-    }
-  
+    } 
 });
 
 
