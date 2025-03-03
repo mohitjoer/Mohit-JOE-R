@@ -12,7 +12,7 @@ header{
   left: 0;
   width: 100%;
   padding: 20px 4%;
-  background:black;
+  background:rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +48,18 @@ header{
   transform: scale(1.1);
   text-shadow: 2px 2px 5px rgba(239, 244, 245, 0.8); 
   z-index: 2;
+}
+
+.mode{
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow:  0  0 10px rgb(239, 244, 245); 
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 .home{
