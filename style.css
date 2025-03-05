@@ -205,6 +205,16 @@ header{
 
 /*part-2*/
 
+.about{
+  background-color:gray;
+  box-shadow: 0 0 30px rgb(74, 74, 74);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px  0;
+  animation: slidedown 1s ease  forwards;
+}
 
 
 /*part-2*/
@@ -232,6 +242,7 @@ header{
   align-items: center;
   gap: 20px;
   font-size: 20px;
+  animation: slideup 1s ease  forwards;
 }
 
 .card{
