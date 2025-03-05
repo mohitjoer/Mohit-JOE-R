@@ -213,7 +213,8 @@ header{
 /*part-3*/
 
 .skill{
-  background-color: #0F4C75;
+  background-color: #000000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
   align-items: center;
