@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
 }
+body{
+  scroll-behavior: smooth;
+}
 
 /*part-1*/
 header{
@@ -214,6 +217,7 @@ header{
   flex-direction: column;
   padding: 40px  0;
   animation: slidedown 1s ease  forwards;
+  padding-bottom:800px ;
 }
 
 
