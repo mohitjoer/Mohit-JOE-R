@@ -265,20 +265,19 @@ header{
   animation: slideup 1s ease  forwards;
 }
 
-
-.border-animation{
+.card{
+  margin: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  height: 45px;
-  width: 300px;
-  background-color: #1c1f2b;
+  height:50px ;
+  border: solid;
   border-radius: 30px;
-  position: relative;
-}
+  border-width: 1px;
+  width: 200px;
+  box-shadow: 0 0 30px rgba(250, 248, 248, 0.9);
 
+}
 
 .card:hover{
   box-shadow: 0 0 60px rgb(2, 212, 245);
@@ -309,40 +308,6 @@ header{
 /*part-4*/
 
 
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.border-animation::after , .border-animation::before {
-  content:'';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), black, black , black,aqua);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 30px;
-  animation: 5s spin linear infinite;
-}
-
-.border-animation::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
-}
-
-@keyframes spin {
-  from{
-      --angle: 0deg;
-  }
-  to {
-      --angle: 360deg;
-  }
-}
 
 
 
