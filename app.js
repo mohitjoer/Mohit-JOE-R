@@ -10,6 +10,10 @@ theme.addEventListener('click', () => {
 });
 
 
+let home = document.querySelector('#home');
+home.addEventListener("view")
+
+
 
 var typed = new Typed('.text', {
     strings: ["Frontend Developer","Youtuber","Web Developer"],

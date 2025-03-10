@@ -10,7 +10,7 @@ body{
 
 /*part-1*/
 header{
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -213,19 +213,32 @@ header{
   box-shadow: 0 0 30px rgb(74, 74, 74);
   color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 70vh;
   flex-direction: column;
   padding: 40px  0;
-  animation: slidedown 1s ease  forwards;
+  animation: slidedown ease  forwards;
+  animation-timeline: view();
+}
+
+.about-s{
+  padding: 30px 20px;
+  border: solid rgb(109, 109, 109);
+  border-width: 3px;
+  background-color: rgba(240, 255, 255, 0.227);
+  border-radius: 50px;
 }
 
 .about-s h3{
+  font-style: italic;
   font-size: 30px;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .about-s p{
+  font-weight: 500;
   font-size: 20px;
   text-align: center;
   padding-bottom: 20px;
@@ -254,18 +267,46 @@ header{
 
 .skill h3{
   font-size: 30px;
+  padding: 30px 0;
 }
 
-.card-holder{
+.align{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  font-size: 20px;
-  animation: slideup 1s ease  forwards;
+  gap:60px;
 }
 
-.card{
+.card-holder1, .card-holder2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(29, 29, 32);
+  border-radius: 30px;
+  padding: 20px 0;
+  font-size: 20px;
+  animation: slideup  ease;
+  animation-timeline: view();
+}
+
+.card-holder1 {
+  border: solid aqua;
+}
+
+.card-holder2{
+  border: solid rgb(248, 62, 62);
+}
+
+.card-holder1:hover{
+  box-shadow: 0 0 60px rgb(2, 212, 245);
+
+  
+}
+
+.card-holder2:hover{
+  box-shadow: 0 0 60px rgb(248, 62, 62);
+}
+
+.card1 ,.card2 {
   margin: 40px;
   display: flex;
   align-items: center;
@@ -275,14 +316,21 @@ header{
   border-radius: 30px;
   border-width: 1px;
   width: 200px;
-  box-shadow: 0 0 30px rgba(250, 248, 248, 0.9);
+  box-shadow: 0 0 20px rgba(250, 248, 248, 0.9);
 
 }
 
-.card:hover{
+.card1:hover{
   box-shadow: 0 0 60px rgb(2, 212, 245);
   border-color: aqua;
   color: aqua;
+  transform: scale(1.1);
+}
+
+.card2:hover{
+  box-shadow: 0 0 60px rgb(248, 62, 62);
+  border-color: rgb(248, 62, 62);
+  color: rgb(248, 62, 62);
   transform: scale(1.1);
 }
 /*responsive*/
