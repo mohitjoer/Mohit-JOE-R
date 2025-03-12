@@ -219,7 +219,6 @@ header{
   flex-direction: column;
   padding: 40px  0;
   animation: slidedown ease  forwards;
-  animation-timeline: view();
 }
 
 .about-s{
@@ -284,16 +283,19 @@ header{
   border-radius: 30px;
   padding: 20px 0;
   font-size: 20px;
-  animation: slideup  ease;
-  animation-timeline: view();
+  
 }
 
 .card-holder1 {
   border: solid aqua;
+  animation: moveup1  ease;
+  animation-timeline: view();
 }
 
 .card-holder2{
   border: solid rgb(248, 62, 62);
+  animation: moveup2  ease;
+  animation-timeline: view();
 }
 
 .card-holder1:hover{
@@ -344,6 +346,28 @@ header{
 
 }
 
+@keyframes moveup1 {
+  0%{
+    transform: translate(-200px,200px);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveup2 {
+  0%{
+    transform: translate(200px,200px);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
 /*responsive*/
 
 /*part-3*/
@@ -354,7 +378,6 @@ header{
 
 
 /*part-4*/
-
 
 
 
