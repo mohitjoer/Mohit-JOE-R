@@ -83,6 +83,7 @@ header{
   animation-delay: .5s;
 }
 
+
 .home-content h3 {
   font-size: 32px;
   font-weight: 700;
@@ -218,7 +219,6 @@ header{
   height: 70vh;
   flex-direction: column;
   padding: 40px  0;
-  animation: slidedown ease  forwards;
 }
 
 .about-s{
@@ -227,6 +227,23 @@ header{
   border-width: 3px;
   background-color: rgba(240, 255, 255, 0.227);
   border-radius: 50px;
+  animation: moverighttoleft  ease;
+  animation-timeline: view();
+}
+
+@keyframes moverighttoleft {
+  0%{
+    transform: translatex(90px);
+    opacity: 0;
+  }
+  50%{
+    transform: translatex(0px);
+    opacity: 1;
+  }
+  100%{
+    transform: translatex(-100px);
+    opacity: 0;
+  }
 }
 
 .about-s h3{
@@ -242,6 +259,7 @@ header{
   padding-bottom: 20px;
   width: 1300px;
 }
+
 
 /*responsive*/
 
@@ -357,6 +375,10 @@ header{
     transform: translate(0px);
     opacity: 1;
   }
+  100%{
+    transform: translate(-200px,200px);
+    opacity: 0;
+  }
 }
 
 @keyframes moveup2 {
@@ -367,6 +389,10 @@ header{
   50%{
     transform: translate(0px);
     opacity: 1;
+  }
+  100%{
+    transform: translate(200px,200px);
+    opacity: 0;
   }
 }
 
