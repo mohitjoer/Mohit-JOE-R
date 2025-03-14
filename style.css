@@ -426,6 +426,9 @@ header{
 
 .social{
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social h3{
