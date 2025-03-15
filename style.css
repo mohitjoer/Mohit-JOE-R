@@ -304,19 +304,20 @@ header{
   border-radius: 30px;
   padding: 20px 0;
   font-size: 20px;
-  
 }
 
 .card-holder1 {
   border: solid aqua;
   animation: moveup1  ease;
   animation-timeline: view();
+  
 }
 
 .card-holder2{
   border: solid rgb(248, 62, 62);
   animation: moveup2  ease;
   animation-timeline: view();
+ 
 }
 
 .card-holder1:hover{
@@ -340,7 +341,6 @@ header{
   border-width: 1px;
   width: 200px;
   box-shadow: 0 0 20px rgba(250, 248, 248, 0.9);
-
 }
 
 .card1:hover{
@@ -450,12 +450,11 @@ header{
   justify-content: center;
   height: 100px;
   width: 100px;
-  background-image:linear-gradient(50deg,aqua,black ,black);
-  
+  background:linear-gradient(50deg,aqua,black ,black); 
 }
 
 .soc-icon:hover {
-  background-image:linear-gradient(150deg,aqua,black ,black);
+  background:linear-gradient(150deg,aqua,black ,black);
 }
 
 .soc-icon a{
