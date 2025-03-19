@@ -5,17 +5,21 @@
   font-family: "poppins",sans-serif;
 }
 body{
+  background-color: #000000;
   scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 /*part-1*/
 header{
+  margin: 30px ;
+  border: solid ;
   position:fixed;
-  top: 0;
-  left: 0;
+  width :80%;
   width: 100%;
-  padding: 20px 4%;
-  background:rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +27,7 @@ header{
 }
 
 .logo{
+  
   position: relative;
   font-size: 25px;
   color: white;
@@ -66,7 +71,8 @@ header{
 }
 
 .home{
-  background-image:linear-gradient(40deg,white,rgb(28, 28, 28));
+  color: white;
+  background-color: aliceblue;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -210,26 +216,42 @@ header{
 /*part-2*/
 
 .about{
-  background-color:gray;
-  box-shadow: 0 0 30px rgb(74, 74, 74);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
   flex-direction: column;
-  padding: 40px  0;
+  padding: 20px  0;
+
 }
 
 .about-s{
-  padding: 30px 20px;
+  max-width:800px;
+  margin: 0 auto; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  padding: 20px;
   border: solid rgb(109, 109, 109);
   border-width: 3px;
-  background-color: rgba(240, 255, 255, 0.227);
-  border-radius: 50px;
+  background-color: rgba(240, 255, 255, 0.168);
+  border-radius: 30px;
   animation: moverighttoleft  ease;
   animation-timeline: view();
+  box-shadow: 0 0 40px rgb(0, 229, 255);
 }
+
+
+.about-s p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;  
+  text-align: center;
+  padding-bottom: 15px; 
+  max-width: 100%;  
+}
+
+
 
 @keyframes moverighttoleft {
   0%{

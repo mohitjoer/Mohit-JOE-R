@@ -11,9 +11,14 @@ theme.addEventListener('click', () => {
 
 
 let home = document.querySelector('#home');
-home.addEventListener("view")
-
-
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log('Home section is in view');
+    }
+  });
+});
+observer.observe(home);
 
 var typed = new Typed('.text', {
     strings: ["Frontend Developer","Youtuber","Web Developer"],
