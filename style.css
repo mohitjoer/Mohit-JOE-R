@@ -459,7 +459,14 @@ header{
   font-style: italic;
   animation: moveupsimp  ease;
   animation-timeline: view();
+}
 
+.Social-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .soc-icon{
@@ -467,7 +474,7 @@ header{
   border-width: 2px;
   border-radius: 30px;
   border-color: aqua;
-  box-shadow: 0 0 60px rgb(2, 212, 245);
+  box-shadow: 0 0 20px rgb(2, 212, 245);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,7 +484,7 @@ header{
 }
 
 .soc-icon:hover {
-  background:linear-gradient(150deg,aqua,black ,black);
+  box-shadow: 0 0 60px rgb(2, 212, 245);
 }
 
 .soc-icon a{
