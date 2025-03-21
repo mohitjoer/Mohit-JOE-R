@@ -477,6 +477,47 @@ header{
   gap: 40px;
 }
 
+.Social-container{
+  animation: moveright ease;
+  animation-timeline: view();
+}
+
+@keyframes moveright {
+  0%{
+    transform: translate(-200px,0);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(-200px,-0);
+    opacity: 0;
+  }
+}
+
+.Social-container-2{
+  animation: moveleft  ease;
+  animation-timeline: view();
+}
+
+
+@keyframes moveleft {
+  0%{
+    transform: translate(200px,0);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(200px,0);
+    opacity: 0;
+  }
+}
+
 .soc-icon{
   border: solid;
   border-width: 2px;
