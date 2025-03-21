@@ -2,11 +2,16 @@ let theme = document.querySelector('#mode');
 theme.addEventListener('click', () => {
   console.log('clicked');
   let logo = document.querySelector('#logo');
-  if (logo.getAttribute('name')=='sunny'){
-    logo.setAttribute('name','moon')}
-    else{
-      logo.setAttribute('name','sunny')
-    } 
+  let bgtheme = document.querySelector(':root')
+  if (logo.getAttribute('name') == 'sunny') {
+    logo.setAttribute('name', 'moon');
+    bgtheme.style.setProperty('--body-color', 'white');
+    bgtheme.style.setProperty('--text-color', 'black');
+  } else {
+    logo.setAttribute('name', 'sunny');
+    bgtheme.style.setProperty('--body-color', 'black');
+    bgtheme.style.setProperty('--text-color', 'white');
+  }
 });
 
 
