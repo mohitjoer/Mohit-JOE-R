@@ -1,11 +1,18 @@
+:root {
+  --body-color: black;
+  --text-color:white;
+}
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
 }
+
 body{
-  background-color: #000000;
+  background-color:var(--body-color);
   scroll-behavior: smooth;
   display: flex;
   align-items: center;
@@ -17,7 +24,7 @@ body{
 header{
   box-shadow: 0 0 30px rgba(3, 218, 242, 0.8);
   margin: 20px ;
-  background-color: #000000;
+  background-color: var(--body-color);
   border: solid 1px white;
   border-radius: 15px;
   padding: 10px 20px;
@@ -34,7 +41,7 @@ header{
   
   position: relative;
   font-size: 25px;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
 }
@@ -43,7 +50,7 @@ header{
 .navbar a {
   display: inline-block;
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -71,7 +78,7 @@ header{
 }
 
 .home{
-  color: white;
+  color: var(--text-color);
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -127,7 +134,7 @@ header{
   height: 60px;
   width: 60px;
   border-radius: 40px;
-  color: rgb(0, 0, 0);
+  color:var(--body-color);
   font-size: 30px;
 }
 
@@ -211,7 +218,7 @@ header{
 /*part-2*/
 
 .about{
-  color: white;
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +299,7 @@ header{
 /*part-3*/
 
 .skill{
-  color: white;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -324,7 +331,7 @@ header{
 }
 
 .card-holder1 {
-  background:linear-gradient(50deg,aqua,black,black ,aqua); 
+  background:linear-gradient(50deg,aqua,var(--body-color),var(--body-color) ,aqua); 
   border: solid aqua;
   box-shadow: 0 0 20px rgb(2, 212, 245);
   animation: moveup1  ease;
@@ -333,7 +340,7 @@ header{
 }
 
 .card-holder2{
-  background:linear-gradient(50deg,rgb(254, 2, 2),black,black ,rgb(255, 0, 0)); 
+  background:linear-gradient(50deg,rgb(254, 2, 2),var(--body-color),var(--body-color) ,rgb(255, 0, 0)); 
   border: solid rgb(248, 62, 62);
   box-shadow: 0 0 20px rgb(248, 62, 62);
   animation: moveup2  ease;
@@ -452,7 +459,7 @@ header{
 }
 
 .social h3{
-  color: white;
+  color: var(--text-color);
   font-size: 30px;
   padding: 30px 0;
   margin-bottom: 30px;
@@ -529,7 +536,7 @@ header{
   justify-content: center;
   height: 100px;
   width: 100px;
-  background:linear-gradient(50deg,aqua,black ,black); 
+  background:linear-gradient(50deg,aqua,var(--body-color) ,var(--body-color)); 
 }
 
 .soc-icon:hover {
@@ -538,7 +545,7 @@ header{
 
 .soc-icon a{
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   font-size: 40px;
 }
 
